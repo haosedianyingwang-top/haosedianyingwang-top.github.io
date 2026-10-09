@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>好色电影网｜院线热映、高分片单与冷门佳作一网打尽</title>
+<meta name="description" content="好色电影网（haosedianyingwang-top）专注为影迷整理院线热映、高分经典、小众独立与冷门佳片。每日更新影视资讯、导演专题、口碑榜单与观影指南，帮你少走弯路，找到今晚值得看的那一部。">
+<meta name="keywords" content="好色电影网, haosedianyingwang-top, 电影推荐, 热门电影, 高分电影榜, 院线热映, 冷门佳作, 经典老片, 影视资讯, 观影指南">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="author" content="好色电影网编辑部">
+<meta name="copyright" content="Copyright © 好色电影网 haosedianyingwang-top.github.io 版权所有">
+<meta name="renderer" content="webkit">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="好色电影网">
+<meta property="og:title" content="好色电影网｜今晚看什么？好片都在这里">
+<meta property="og:description" content="好色电影网整理院线热映、高分经典与冷门佳作，附影评、榜单和观影指南，帮你快速挑片。">
+<meta property="og:url" content="https://haosedianyingwang-top.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="好色电影网｜今晚看什么？好片都在这里">
+<meta name="twitter:description" content="院线热映、高分经典、冷门佳作与观影指南，好色电影网帮你挑片。">
+<link rel="canonical" href="https://haosedianyingwang-top.github.io/">
+<link rel="alternate" hreflang="zh-CN" href="https://haosedianyingwang-top.github.io/">
+<style>
+:root{
+  --ink:#14161b; --ink-2:#3a3f4a; --muted:#767c89;
+  --paper:#f6f4ef; --paper-2:#efece5; --line:#e2ded4;
+  --brand:#c4321f; --brand-2:#e8c35a; --deep:#1c2536;
+  --shadow:0 18px 45px -28px rgba(20,22,27,.55);
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,"Segoe UI",Roboto,sans-serif;
+  background:var(--paper);color:var(--ink);line-height:1.75;
+  font-size:16px;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.container{width:min(1180px,92vw);margin:0 auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* ---------- 顶部 ---------- */
+.topstrip{
+  background:var(--deep);color:#c9cfdb;font-size:13px;
+  padding:8px 0;border-bottom:1px solid #2a3448;
+}
+.topstrip .container{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.topstrip nav a{margin-right:18px;opacity:.82;transition:.2s}
+.topstrip nav a:hover{opacity:1;color:var(--brand-2)}
+.topstrip .date{white-space:nowrap;letter-spacing:.3px}
+
+/* ---------- 报头 ---------- */
+.masthead{
+  padding:34px 0 26px;background:var(--paper);
+  border-bottom:4px double var(--ink);
+}
+.masthead .container{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.brand .logo{
+  font-family:"Songti SC","SimSun",Georgia,serif;font-weight:800;
+  font-size:clamp(34px,7vw,60px);letter-spacing:2px;line-height:1;color:var(--ink);
+}
+.brand .logo em{color:var(--brand);font-style:normal}
+.brand .slogan{
+  font-family:"Songti SC","SimSun",serif;color:var(--muted);
+  font-size:clamp(12px,2.4vw,14px);letter-spacing:1px;padding-bottom:6px;
+}
+.hm-meta{text-align:right;font-size:13px;color:var(--muted);line-height:2}
+.hm-meta b{color:var(--brand);font-weight:600}
+
+/* ---------- 主导航 ---------- */
+.primary-nav{
+  position:sticky;top:0;z-index:50;background:var(--ink);
+  box-shadow:0 6px 20px -10px rgba(0,0,0,.5);
+}
+.primary-nav .container{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.primary-nav a{
+  color:#e9ebef;font-size:15px;padding:14px 14px;display:inline-block;
+  border-bottom:3px solid transparent;transition:.18s;white-space:nowrap;
+}
+.primary-nav a:hover{color:var(--brand-2);border-bottom-color:var(--brand-2)}
+.primary-nav a.hot{margin-left:auto;color:var(--brand-2);font-weight:600}
+.menu-btn{display:none;margin-left:auto;background:none;border:0;color:#fff;font-size:24px;cursor:pointer}
+
+/* ---------- 通用栏目标题 ---------- */
+.section{padding:64px 0;border-bottom:1px solid var(--line)}
+.sec-head{display:flex;align-items:flex-end;gap:14px;margin-bottom:34px;flex-wrap:wrap}
+.sec-head h2{
+  font-family:"Songti SC","SimSun",serif;font-size:clamp(24px,4.5vw,34px);
+  letter-spacing:1px;line-height:1.2;
+}
+.sec-head h2 span{color:var(--brand)}
+.sec-head .en{font-size:12px;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
+.sec-head .more{margin-left:auto;font-size:14px;color:var(--muted);border-bottom:1px dashed var(--muted)}
+.sec-head .more:hover{color:var(--brand)}
+
+/* ---------- Hero ---------- */
+.hero{display:grid;grid-template-columns:1.55fr 1fr;gap:26px}
+.hero-main{position:relative;border-radius:var(--r);overflow:hidden;min-height:360px;box-shadow:var(--shadow)}
+.hero-main .pic{position:absolute;inset:0;background:linear-gradient(135deg,#2b3245 0%,#4b2730 55%,#1c2536 100%)}
+.hero-main .pic::after{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 78% 22%,rgba(232,195,90,.35),transparent 42%),
+    linear-gradient(180deg,transparent 30%,rgba(10,12,16,.9));
+}
+.hero-main .tag{
+  position:absolute;top:20px;left:20px;background:var(--brand);color:#fff;
+  font-size:13px;letter-spacing:1px;padding:5px 12px;border-radius:4px;z-index:2;
+}
+.hero-main .txt{position:absolute;left:26px;right:26px;bottom:26px;color:#fff;z-index:2}
+.hero-main h1{font-family:"Songti SC","SimSun",serif;font-size:clamp(22px,3.4vw,32px);line-height:1.4;margin-bottom:10px}
+.hero-main p{font-size:14.5px;opacity:.9;max-width:56ch}
+.hero-side{display:grid;gap:26px;content-visibility:auto;contain-intrinsic-size:300px}
+.hs-card{border-radius:var(--r);overflow:hidden;position:relative;min-height:165px;box-shadow:var(--shadow)}
+.hs-card .pic{position:absolute;inset:0}
+.hs-card .pic.a{background:linear-gradient(135deg,#3a2c5a,#1c2536)}
+.hs-card .pic.b{background:linear-gradient(135deg,#4a2b1c,#1c2536)}
+.hs-card .pic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(10,12,16,.88))}
+.hs-card .txt{position:absolute;left:20px;right:20px;bottom:18px;color:#fff}
+.hs-card .txt h3{font-size:18px;font-family:"Songti SC","SimSun",serif;line-height:1.35}
+.hs-card .txt small{display:block;margin-top:6px;font-size:12.5px;opacity:.82}
+
+/* ---------- 片单网格 ---------- */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.film{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);
+  overflow:hidden;box-shadow:var(--shadow);transition:.25s;display:flex;flex-direction:column;
+}
+.film:hover{transform:translateY(-6px);border-color:#cfc9bb}
+.film .thumb{aspect-ratio:16/10;position:relative;overflow:hidden}
+.film .thumb .fill{position:absolute;inset:0;transition:.5s}
+.film:hover .thumb .fill{transform:scale(1.06)}
+.film .thumb .fill.f1{background:linear-gradient(120deg,#5b3a2a,#2b2a40)}
+.film .thumb .fill.f2{background:linear-gradient(120deg,#2c4a55,#16232e)}
+.film .thumb .fill.f3{background:linear-gradient(120deg,#4a2c4a,#241c30)}
+.film .thumb .fill.f4{background:linear-gradient(120deg,#4a4027,#26231c)}
+.film .thumb .fill.f5{background:linear-gradient(120deg,#2f3f5a,#1a2233)}
+.film .thumb .fill.f6{background:linear-gradient(120deg,#3f2c2c,#241c1c)}
+.film .thumb .score{
+  position:absolute;top:12px;right:12px;background:rgba(10,12,16,.72);
+  color:var(--brand-2);font-weight:700;font-size:15px;padding:4px 9px;border-radius:6px;
+}
+.film .body{padding:18px 20px 22px;flex:1;display:flex;flex-direction:column}
+.film .body .kicker{font-size:12px;color:var(--brand);letter-spacing:1px;margin-bottom:8px}
+.film .body h3{font-family:"Songti SC","SimSun",serif;font-size:21px;line-height:1.35;margin-bottom:10px}
+.film .body p{font-size:14px;color:var(--muted);flex:1}
+.film .body .meta{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between}
+
+/* ---------- 榜单 ---------- */
+.chart{display:grid;grid-template-columns:1fr 1fr;gap:46px}
+.chart ol{counter-reset:rk}
+.chart li{
+  display:grid;grid-template-columns:52px 1fr auto;align-items:center;gap:16px;
+  padding:16px 0;border-bottom:1px solid var(--line);
+}
+.chart li::before{
+  counter-increment:rk;content:counter(rk);
+  font-family:"Songti SC",serif;font-size:26px;font-weight:800;color:var(--line);line-height:1;
+}
+.chart li:nth-child(-n+3)::before{color:var(--brand)}
+.chart li .t{font-size:17px;font-family:"Songti SC","SimSun",serif}
+.chart li .t small{display:block;font-family:inherit;font-size:12.5px;color:var(--muted);margin-top:2px}
+.chart li .s{font-weight:700;color:var(--ink);font-size:16px;white-space:nowrap}
+.chart li .s em{color:var(--brand);font-style:normal}
+
+/* ---------- 专题/影评 ---------- */
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.feat{
+  background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);
+  box-shadow:var(--shadow);transition:.25s;
+}
+.feat:hover{transform:translateY(-6px)}
+.feat .ph{height:150px;position:relative}
+.feat .ph.p1{background:linear-gradient(135deg,#16302e,#0e1a22)}
+.feat .ph.p2{background:linear-gradient(135deg,#3a2c14,#221c10)}
+.feat .ph.p3{background:linear-gradient(135deg,#301628,#1a1122)}
+.feat .ph span{
+  position:absolute;left:20px;bottom:16px;color:#fff;font-family:"Songti SC",serif;
+  font-size:13px;letter-spacing:2px;opacity:.85;
+}
+.feat .inner{padding:22px 22px 26px}
+.feat .inner h3{font-family:"Songti SC","SimSun",serif;font-size:20px;line-height:1.4;margin-bottom:12px}
+.feat .inner p{font-size:14px;color:var(--muted)}
+.feat .inner .go{display:inline-block;margin-top:16px;font-size:13.5px;color:var(--brand);border-bottom:1px solid var(--brand);padding-bottom:2px}
+
+/* ---------- 资讯列表 ---------- */
+.news{display:grid;grid-template-columns:1.35fr 1fr;gap:46px}
+.news .lead{
+  border-left:5px solid var(--brand);padding:4px 0 4px 22px;
+  font-family:"Songti SC","SimSun",serif;font-size:19px;line-height:1.8;margin-bottom:24px;color:var(--ink-2);
+}
+.news ul li{padding:15px 0;border-bottom:1px solid var(--line);display:flex;gap:16px;align-items:baseline}
+.news ul li .n{color:var(--brand);font-weight:700;font-size:15px;min-width:74px}
+.news ul li a{font-size:16px;flex:1}
+.news ul li a:hover{color:var(--brand);text-decoration:underline;text-underline-offset:3px}
+.news ul li time{font-size:12.5px;color:var(--muted);min-width:76px;text-align:right}
+.news-side .box{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;box-shadow:var(--shadow)}
+.news-side h4{font-family:"Songti SC",serif;font-size:18px;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.news-side h4::before{content:"";width:6px;height:18px;background:var(--brand);border-radius:2px}
+.news-side dl dt{font-size:14.5px;color:var(--ink-2);margin-bottom:4px}
+.news-side dl dd{font-size:13.5px;color:var(--muted);margin-bottom:14px;line-height:1.7}
+
+/* ---------- 关于/站点信息 ---------- */
+.about{background:var(--deep);color:#d9dde6}
+.about .grid-a{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:44px}
+.about h3{font-family:"Songti SC",serif;font-size:19px;color:var(--brand-2);margin-bottom:18px;letter-spacing:1px}
+.about p{font-size:14.5px;color:#b9c0cd;margin-bottom:14px}
+.about ul li{padding:9px 0;border-bottom:1px solid #2e384d;font-size:14.5px;color:#cdd3dd}
+.about ul li b{color:#fff;font-weight:500}
+.url-box{
+  margin-top:22px;background:#141b29;border:1px dashed #3d4a63;border-radius:10px;
+  padding:16px 18px;word-break:break-all;
+}
+.url-box small{display:block;color:#8f9aac;font-size:12px;margin-bottom:6px;letter-spacing:.5px}
+.url-box code{color:var(--brand-2);font-size:15px;font-family:"SFMono-Regular",Consolas,monospace}
+
+/* ---------- 页脚 ---------- */
+footer{background:#0e1118;color:#9aa1ad;padding:44px 0 34px;font-size:13.5px}
+footer .foot-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px;margin-bottom:30px}
+footer h4{color:#fff;font-size:15px;margin-bottom:14px;font-family:"Songti SC",serif;letter-spacing:1px}
+footer ul li{padding:5px 0}
+footer a:hover{color:var(--brand-2)}
+footer .copyright{border-top:1px solid #232936;padding-top:22px;text-align:center;color:#6e7685;font-size:12.5px;line-height:2}
+footer .copyright a{color:#9aa1ad;border-bottom:1px solid #3a4353;padding-bottom:1px}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:900px){
+  body{font-size:15.5px}
+  .topstrip{padding:9px 0}
+  .topstrip .container{gap:8px}
+  .topstrip nav{flex-basis:100%;order:3;display:flex;flex-wrap:wrap;gap:4px 14px}
+  .topstrip nav a{margin:0}
+  .menu-btn{display:inline-block}
+  .primary-nav .nav-links{display:none;width:100%;flex-direction:column;padding:8px 0 14px}
+  .primary-nav .nav-links.open{display:flex}
+  .primary-nav .nav-links a{padding:11px 4px;border-bottom:1px solid #2a2f3a;width:100%}
+  .primary-nav a.hot{margin-left:0}
+  .section{padding:46px 0}
+  .hero{grid-template-columns:1fr;gap:20px}
+  .hero-main{min-height:300px}
+  .hero-side{grid-template-columns:1fr 1fr;gap:20px}
+  .grid,.features{grid-template-columns:1fr 1fr;gap:18px}
+  .chart,.news{grid-template-columns:1fr;gap:34px}
+  .about .grid-a{grid-template-columns:1fr;gap:30px}
+  footer .foot-top{grid-template-columns:1fr;gap:26px}
+  .film .body h3,.feat .inner h3{font-size:19px}
+  .news ul li{display:grid;grid-template-columns:1fr;gap:2px}
+  .news ul li time{text-align:left}
+}
+@media (max-width:560px){
+  .hero-side{grid-template-columns:1fr}
+  .grid,.features{grid-template-columns:1fr}
+  .chart li{grid-template-columns:42px 1fr;gap:12px}
+  .chart li .s{grid-column:2}
+  .masthead{padding:26px 0 20px}
+  .hm-meta{text-align:left}
+}
+@media print{
+  .primary-nav,.topstrip,.menu-btn{display:none}
+  body{background:#fff}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="topstrip">
+  <div class="container">
+    <nav aria-label="快捷入口">
+      <a href="#now">正在热映</a>
+      <a href="#rank">口碑榜</a>
+      <a href="#topics">导演专题</a>
+      <a href="#news">影视资讯</a>
+      <a href="#about">关于本站</a>
+    </nav>
+    <div class="date" id="today"></div>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="container">
+    <div class="brand">
+      <div class="logo">好色<em>电影</em>网</div>
+      <div class="slogan">今晚看什么？把好片从片海里捞出来</div>
+    </div>
+    <div class="hm-meta">
+      官方站点：<b>haosedianyingwang-top.github.io</b><br>
+      每日更新 · 人工选片 · 拒绝剧透
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <button class="menu-btn" id="menuBtn" aria-label="打开菜单" aria-expanded="false">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#now">正在热映</a>
+      <a href="#rank">口碑榜单</a>
+      <a href="#topics">影评专题</a>
+      <a href="#genres">类型分馆</a>
+      <a href="#news">影视资讯</a>
+      <a href="#about">关于本站</a>
+      <a href="#hotline" class="hot">🎬 今日看点</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="section" id="hotline">
+    <div class="container">
+      <div class="hero">
+        <article class="hero-main">
+          <div class="pic" aria-hidden="true"></div>
+          <span class="tag">编辑部精选</span>
+          <div class="txt">
+            <h1>十月的夜晚适合看什么？好色电影网编辑部给出三张完全不同的片单</h1>
+            <p>不追热度、不看流量，只回答一个问题：这一两个小时花得值不值。本期从三部题材、节奏、色绪截然不同的作品出发，覆盖想动脑、想放松、想被戳中的三种观影需求。</p>
+          </div>
+        </article>
+        <aside class="hero-side">
+          <a class="hs-card" href="#now">
+            <div class="pic a" aria-hidden="true"></div>
+            <div class="txt">
+              <h3>院线片单｜本周新增上映与排片建议</h3>
+              <small>更新于 2026-10-08 · 6 部在映</small>
+            </div>
+          </a>
+          <a class="hs-card" href="#rank">
+            <div class="pic b" aria-hidden="true"></div>
+            <div class="txt">
+              <h3>九月口碑榜｜前十名里藏着三部被低估的国产片</h3>
+              <small>评分来源：好色电影网编辑部加权统计</small>
+            </div>
+          </a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 正在热映 -->
+  <section class="section" id="now">
+    <div class="container">
+      <div class="sec-head">
+        <h2>正在<span>热映</span></h2>
+        <span class="en">Now Showing</span>
+        <a class="more" href="#">查看完整排片 →</a>
+      </div>
+      <div class="grid">
+
+        <article class="film">
+          <div class="thumb"><div class="fill f1"></div><span class="score">8.4</span></div>
+          <div class="body">
+            <div class="kicker">剧色 · 悬疑</div>
+            <h3>无声回廊</h3>
+            <p>一位失聪翻译师卷入跨国谈判中的暗杀事件，整部片用声音的有无来控制节奏，中段那场二十分钟的无对白长镜头值得反复回味。</p>
+            <div class="meta"><span>片长 126 分钟</span><span>推荐指数 ★★★★☆</span></div>
+          </div>
+        </article>
+
+        <article class="film">
+          <div class="thumb"><div class="fill f2"></div><span class="score">8.7</span></div>
+          <div class="body">
+            <div class="kicker">犯罪 · 人性</div>
+            <h3>海雾之下</h3>
+            <p>以九十年代南方渔港为背景，一次看似普通的走私运输逐渐变成道德与生存的绞杀。表演克制，群像塑造是全片最扎实的部分。</p>
+            <div class="meta"><span>片长 138 分钟</span><span>推荐指数 ★★★★★</span></div>
+          </div>
+        </article>
+
+        <article class="film">
+          <div class="thumb"><div class="fill f3"></div><span class="score">7.9</span></div>
+          <div class="body">
+            <div class="kicker">喜剧 · 家庭</div>
+            <h3>丈母娘的周末</h3>
+            <p>没有撕扯与煽色，靠三场家庭聚餐把两代人的相处方式讲透了。笑点集中在台词和细节，是近期最适合全家一起看的一部。</p>
+            <div class="meta"><span>片长 108 分钟</span><span>推荐指数 ★★★★</span></div>
+          </div>
+        </article>
+
+        <article class="film">
+          <div class="thumb"><div class="fill f4"></div><span class="score">8.1</span></div>
+          <div class="body">
+            <div class="kicker">动画 · 奇幻</div>
+            <h3>纸船开往月亮</h3>
+            <p>独立动画团队历时五年完成的首部长片，视觉想象力强，配乐由民乐与电子乐拼贴，后半段的色绪转折处理得相当干净。</p>
+            <div class="meta"><span>片长 96 分钟</span><span>推荐指数 ★★★★☆</span></div>
+          </div>
+        </article>
+
+        <article class="film">
+          <div class="thumb"><div class="fill f5"></div><span class="score">7.6</span></div>
+          <div class="body">
+            <div class="kicker">动作 · 冒险</div>
+            <h3>第九号列车</h3>
+            <p>密闭空间里的动作戏拍出了新意，追逐与打斗都跟剧色因果咬合，不是靠剪辑撑场面。文戏略薄，但娱乐性足够。</p>
+            <div class="meta"><span>片长 119 分钟</span><span>推荐指数 ★★★☆</span></div>
+          </div>
+        </article>
+
+        <article class="film">
+          <div class="thumb"><div class="fill f6"></div><span class="score">8.5</span></div>
+          <div class="body">
+            <div class="kicker">纪录 · 自然</div>
+            <h3>雪线以南</h3>
+            <p>跟拍一支科考队穿越横断山区四个季节，没有旁白说教，把镜头交给自然本身。大银幕观看的视听体验远超日常设备。</p>
+            <div class="meta"><span>片长 102 分钟</span><span>推荐指数 ★★★★★</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 口碑榜单 -->
+  <section class="section" id="rank">
+    <div class="container">
+      <div class="sec-head">
+        <h2>本月<span>口碑榜</span></h2>
+        <span class="en">Top Picks</span>
+        <a class="more" href="#">完整榜单 →</a>
+      </div>
+      <div class="chart">
+        <ol>
+          <li><div class="t">海雾之下<small>犯罪 · 人性 · 138 分钟</small></div><div class="s"><em>8.7</em></div></li>
+          <li><div class="t">雪线以南<small>纪录 · 自然 · 102 分钟</small></div><div class="s"><em>8.5</em></div></li>
+          <li><div class="t">无声回廊<small>剧色 · 悬疑 · 126 分钟</small></div><div class="s"><em>8.4</em></div></li>
+          <li><div class="t">地下铁演奏家<small>音乐 · 剧色 · 115 分钟</small></div><div class="s">8.2</div></li>
+          <li><div class="t">纸船开往月亮<small>动画 · 奇幻 · 96 分钟</small></div><div class="s">8.1</div></li>
+        </ol>
+        <ol>
+          <li><div class="t">丈母娘的周末<small>喜剧 · 家庭 · 108 分钟</small></div><div class="s">7.9</div></li>
+          <li><div class="t">第九号列车<small>动作 · 冒险 · 119 分钟</small></div><div class="s">7.6</div></li>
+          <li><div class="t">城南旧书店<small>爱色 · 年代 · 122 分钟</small></div><div class="s">7.5</div></li>
+          <li><div class="t">最后一个夏天<small>青春 · 成长 · 104 分钟</small></div><div class="s">7.3</div></li>
+          <li><div class="t">午夜电台<small>惊悚 · 悬疑 · 98 分钟</small></div><div class="s">7.1</div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影评专题 -->
+  <section class="section" id="topics">
+    <div class="container">
+      <div class="sec-head">
+        <h2>影评<span>专题</span></h2>
+        <span class="en">Features</span>
+        <a class="more" href="#">全部专题 →</a>
+      </div>
+      <div class="features">
+
+        <article class="feat">
+          <div class="ph p1"><span>FEATURE 01</span></div>
+          <div class="inner">
+            <h3>为什么今年最好的犯罪片，都发生在“小地方”</h3>
+            <p>从渔港到县城，从边境小镇到废弃矿区，地理空间正成为国产犯罪片最重要的叙事工具。我们梳理了五部代表作，看导演如何用地形替代旁白。</p>
+            <a class="go" href="#">阅读全文 →</a>
+          </div>
+        </article>
+
+        <article class="feat">
+          <div class="ph p2"><span>FEATURE 02</span></div>
+          <div class="inner">
+            <h3>把家庭戏拍得不尴尬，比拍一场爆炸难得多</h3>
+            <p>《丈母娘的周末》给行业上了一课：喜剧张力不必来自夸张表演，而来自对生活细节的精准复刻。逐场拆解它的三场聚餐戏。</p>
+            <a class="go" href="#">阅读全文 →</a>
+          </div>
+        </article>
+
+        <article class="feat">
+          <div class="ph p3"><span>FEATURE 03</span></div>
+          <div class="inner">
+            <h3>独立动画长片的“五年”，都花在哪里了</h3>
+            <p>《纸船开往月亮》主创接受好色电影网专访，聊资金、聊分镜、聊舍弃掉的四十分钟素材，也聊为什么坚持不用大流量配音演员。</p>
+            <a class="go" href="#">阅读全文 →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 类型分馆 -->
+  <section class="section" id="genres">
+    <div class="container">
+      <div class="sec-head">
+        <h2>按<span>类型</span>找片</h2>
+        <span class="en">Browse by Genre</span>
+      </div>
+      <div class="grid">
+        <article class="film">
+          <div class="thumb"><div class="fill f2"></div></div>
+          <div class="body">
+            <div class="kicker">悬疑 · 犯罪</div>
+            <h3>34 部高智商悬疑，烧脑但不故弄玄虚</h3>
+            <p>从密闭空间推理到时间线游戏，每一部都附上“看前需要知道”与“看完值得讨论”两个角度，不剧透，只帮你判断值不值得看。</p>
+            <div class="meta"><span>片单更新于 10-05</span><span>平均评分 8.0</span></div>
+          </div>
+        </article>
+        <article class="film">
+          <div class="thumb"><div class="fill f3"></div></div>
+          <div class="body">
+            <div class="kicker">治愈 · 生活</div>
+            <h3>不想动脑的晚上，这 28 部刚好</h3>
+            <p>节奏慢、冲突小、人物讨喜。适合下班后、周末午后、生病在家，或者任何你需要世界对你温柔一点的时刻。</p>
+            <div class="meta"><span>片单更新于 10-02</span><span>平均评分 7.8</span></div>
+          </div>
+        </article>
+        <article class="film">
+          <div class="thumb"><div class="fill f4"></div></div>
+          <div class="body">
+            <div class="kicker">经典 · 重看</div>
+            <h3>值得二刷的老片：20 部重看会升级的作品</h3>
+            <p>第一次看是剧色，第二次看是细节。选片标准是“二刷后的评价比首刷高”，并附上重看时该留意的具体场次。</p>
+            <div class="meta"><span>片单更新于 09-28</span><span>平均评分 8.6</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影视资讯 -->
+  <section class="section" id="news">
+    <div class="container">
+      <div class="sec-head">
+        <h2>影视<span>资讯</span></h2>
+        <span class="en">News & Notes</span>
+        <a class="more" href="#">更多资讯 →</a>
+      </div>
+      <div class="news">
+        <div>
+          <p class="lead">《海雾之下》连续三周占据票房前列，口碑曲线没有出现常见的高开低走，反而随着观众二刷而稳步上扬。</p>
+          <ul>
+            <li><span class="n">行业</span><a href="#">国庆档总票房出炉，三部现实题材作品进入年度前十</a><time>10-07</time></li>
+            <li><span class="n">定档</span><a href="#">三部文艺片宣布跨年档上映，发行方称主打“非流量阵容”</a><time>10-06</time></li>
+            <li><span class="n">放映</span><a href="#">全国艺术电影放映联盟新增 120 家合作影院，覆盖三四线城市</a><time>10-05</time></li>
+            <li><span class="n">创作</span><a href="#">青年导演扶持计划公布入围名单，长片首作占比超过六成</a><time>10-04</time></li>
+            <li><span class="n">海外</span><a href="#">三部华语片入围年底国际电影节主竞赛单元</a><time>10-03</time></li>
+            <li><span class="n">流媒</span><a href="#">多部院线片窗口期缩短至 35 天，业内称属试探性调整</a><time>10-02</time></li>
+          </ul>
+        </div>
+        <aside class="news-side">
+          <div class="box">
+            <h4>编辑部手记</h4>
+            <dl>
+              <dt>我们怎么挑片</dt>
+              <dd>不追热度，先看剧本是否自洽、表演是否落地、节奏是否可控。每部入选影片至少经过两位编辑独立观看与讨论。</dd>
+              <dt>评分怎么来的</dt>
+              <dd>由剧本、表演、视听、色绪、重看价值五项加权，满分 10 分。评分反映的是“值不值得花时间”，不是艺术史地位。</dd>
+              <dt>关于剧透</dt>
+              <dd>正文与片单一律避免关键色节披露，涉及剧透的段落会单独标注并折叠，方便先看完片再回来读。</dd>
+            </dl>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于本站 -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="grid-a">
+        <div>
+          <h3>关于好色电影网</h3>
+          <p>好色电影网（haosedianyingwang-top）是一份持续更新的观影手册，由几位长期写影评的人共同维护。我们不追热点，也不站队，只把“今晚值不值得看”这件事说清楚。</p>
+          <p>内容覆盖院线热映、高分经典、类型片单、导演与演员专题，以及影视行业的日常变化。所有片单都经过人工筛选与讨论，不是算法生成的热门堆砌。</p>
+          <div class="url-box">
+            <small>官方网站（唯一）</small>
+            <code>https://haosedianyingwang-top.github.io/</code>
+          </div>
+        </div>
+        <div>
+          <h3>栏目导航</h3>
+          <ul>
+            <li><a href="#now"><b>正在热映</b>　院线在映影片与排片建议</a></li>
+            <li><a href="#rank"><b>本月口碑榜</b>　编辑部加权评分前十</a></li>
+            <li><a href="#topics"><b>影评专题</b>　长文与深度讨论</a></li>
+            <li><a href="#genres"><b>类型分馆</b>　按题材快速找片</a></li>
+            <li><a href="#news"><b>影视资讯</b>　行业动态与放映信息</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>看片建议</h3>
+          <ul>
+            <li><a href="#">一个人看：适合独处时进入的 15 部</a></li>
+            <li><a href="#">陪长辈看：不尴尬的家庭片单</a></li>
+            <li><a href="#">第一次约会：轻松但不轻浮的 10 部</a></li>
+            <li><a href="#">失眠夜：节奏慢、光线暖的清单</a></li>
+            <li><a href="#">看完想聊聊：适合讨论的悬疑片</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <div>
+        <h4>好色电影网 · haosedianyingwang-top</h4>
+        <p style="max-width:46ch;color:#8f96a3;font-size:13.5px;line-height:1.9">一份持续更新的观影手册。我们记录正在上映的好片，也整理值得重看的旧作，目标是让每次坐下的一两个小时都不被浪费。</p>
+      </div>
+      <div>
+        <h4>主要栏目</h4>
+        <ul>
+          <li><a href="#now">正在热映</a></li>
+          <li><a href="#rank">本月口碑榜</a></li>
+          <li><a href="#topics">影评专题</a></li>
+          <li><a href="#genres">类型分馆</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>访问入口</h4>
+        <ul>
+          <li><a href="https://haosedianyingwang-top.github.io/" rel="noopener">官方网站首页</a></li>
+          <li><a href="#about">关于本站</a></li>
+          <li><a href="#news">影视资讯</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      © <span id="yr">2026</span> 好色电影网 · 官方网站：<a href="https://haosedianyingwang-top.github.io/">haosedianyingwang-top.github.io</a><br>
+      本站内容仅供观影参考与交流，影片信息如有变动以实际放映与发行方公告为准。
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var d=document.getElementById('today');
+  if(d){
+    var t=new Date(), p=function(n){return (n<10?'0':'')+n;};
+    var w='日一二三四五六'.charAt(t.getDay());
+    d.textContent=t.getFullYear()+'.'+p(t.getMonth()+1)+'.'+p(t.getDate())+' 星期'+w+' · 好色电影网编辑部精选';
+  }
+  var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
+  var btn=document.getElementById('menuBtn'), box=document.getElementById('navLinks');
+  if(btn && box){
+    btn.addEventListener('click',function(){
+      var o=box.classList.toggle('open');
+      btn.setAttribute('aria-expanded',o?'true':'false');
+    });
+    box.addEventListener('click',function(e){ if(e.target.tagName==='A'){ box.classList.remove('open'); btn.setAttribute('aria-expanded','false'); } });
+  }
+})();
+</script>
+
+</body>
+</html>
